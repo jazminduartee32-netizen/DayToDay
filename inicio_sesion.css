@@ -1,0 +1,71 @@
+body{
+    font-family:arial, sans-serif;
+    background-color: #f3f0f0fd;
+}
+
+.titulo{
+    color:#2eaccc;
+    text-shadow:  1px 1.5px rgba(0, 0, 0, 0.3);        /* Sombra del texto */
+    font-weight: bold;                                   /* convierte el texto en negrita */
+    letter-spacing: 2px;                                 /* Espaciado entre letras */
+    font-size:35px;                                      /* Tamaño del texto */
+    text-align: left;
+    text-transform: uppercase;                           /* Convierte el texto a mayúsculas */
+}
+
+.to{
+    font-size: 15px;
+}
+
+.subtitulo{
+    font-weight: bold;                                                  
+    color:#2eaccc;
+    text-transform: uppercase; 
+    text-align: center;    
+    padding: 13px; 
+    letter-spacing: 2px;   
+    font-size: 23px;                                                                
+}
+
+.tarjeta-inicio-sesion{
+    border: 0.5px solid rgb(212, 210, 210);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.075);               /* sombra de la tarjeta */
+    background-color: aliceblue;                            /* color de fondo de la tarjeta */
+    border-radius: 15px;                                      /* Bordes redondeados */
+    margin: auto;                                             /* centra a la tarjeta en la pagina */
+    max-width: 400px;                                             /* maximo ancho de la tarjeta */
+    padding: 10px;                                                 /* Espaciado interno de la tarjeta */
+}
+
+.grupo-formulario{
+    display: flex;
+    flex-direction: column;                           /* pone los "label" arriba de los campos de texto */
+    margin-bottom: 18px;                    /* Espacio entre los campos del formulario */  
+}                                  
+
+.campo-correo, .campo-contrasena{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;                                    
+}
+
+.boton-iniciar-sesion{
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #2eaccc;
+    padding: 10px 20px;                                              /* 10px es el espaciado arriba y abajo, 20px a los lados */
+    color:#f9f5f5;
+    display: block;                                        /* con esto el boton se comporta como un bloque y ocupa todo el ancho disponible */
+    margin-left: auto;                                      /* con esto el boton se alinea a la izquierda */
+    margin-right: auto;                                      /*con esto el boton se alinea a la derecha */
+    cursor: pointer;
+    font-weight: bold;                                                  /* hace que el texto del boton sea negrita */
+    letter-spacing: 1px;
+    text-transform: uppercase;    
+    transition: background-color 0.3s ease;                          /* hace que el cambio de color sea suave */                                      
+}
+
+.boton-iniciar-sesion:hover{
+    background-color: #1e7f99;                                      /* color del boton al pasar el mouse por encima */
+}
