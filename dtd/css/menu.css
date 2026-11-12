@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-contenedor {
+    background-color: #ffffff;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    padding: 12px 0;
+    position: relative;
+}
+
+.menu-seccion-titulo {
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+    padding: 8px 16px 4px 16px;
+    letter-spacing: 0.5px;
+}
+
+.cuenta-card {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cuenta-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+    background-color: #cbd5e1;
+}
+
+.cuenta-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.cuenta-info h2,
+.cuenta-info strong {
+    font-size: 13px;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.cuenta-info p,
+.cuenta-info span {
+    font-size: 11px;
+    color: #64748b;
+}
+
+.flecha, .flecha-sola {
+    font-size: 16px;
+    color: #94a3b8;
+    font-weight: bold;
+}
+
+.divisor {
+    height: 1px;
+    background-color: #e2e8f0;
+    margin: 8px 0;
+}
+
+.menu-opcion {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    font-size: 13px;
+    color: #334155;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.menu-opcion:hover, .cuenta-card:hover {
+    background-color: #f8fafc;
+}
+
+.icono {
+    margin-right: 12px;
+    font-size: 15px;
+    width: 20px;
+    text-align: center;
+}
+
+.opcion-salir {
+    color: #b91c1c;
+}
+
+.opcion-salir:hover {
+    background-color: #fef2f2;
+}
+
+/* FLOTANTE EDITABLE */
+.menu-opcion-desplegable {
+    position: relative;
+}
+
+.tarjeta-desplegable {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 260px;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    margin-left: 8px;
+}
+
+.menu-opcion-desplegable:hover .tarjeta-desplegable {
+    display: block;
+}
+
+.desplegable-titulo {
+    font-size: 12px;
+    font-weight: 700;
+    color: #0284c7;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #e2e8f0;
+    padding-bottom: 4px;
+}
+
+/* FORMULARIO EDITABLE */
+.campo-edicion {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.campo-edicion label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 2px;
+}
+
+.campo-edicion input {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    font-size: 12px;
+    outline: none;
+}
+
+.campo-edicion input:focus {
+    border-color: #0284c7;
+}
+
+.btn-guardar-tarjeta {
+    background-color: #0284c7;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.btn-guardar-tarjeta:hover {
+    background-color: #0369a1;
+}
+
+/* CHECKBOXES NOTIFICACIONES */
+.opcion-switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.opcion-switch input[type="checkbox"] {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+/* PANTALLA SECUNDARIA Y MODAL */
+.modal-fondo {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e2e8f0;
+}
+
+.modal-card h3 {
+    font-size: 16px;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.modal-card p {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.modal-botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-cancelar {
+    flex: 1;
+    background-color: #f1f5f9;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-confirmar {
+    flex: 1;
+    background-color: #b91c1c;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}

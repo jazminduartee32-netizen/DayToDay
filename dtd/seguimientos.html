@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayToDay - Seguimiento de Hábitos</title>
+    <link rel="stylesheet" href="css\seguimientos.css">
+    <link rel="stylesheet" href="css\menu.css">
+    <link rel="stylesheet" href="css\estilo_perfil.css">
+</head>
+<body>
+
+    <!-- Menú lateral unificado -->
+    <aside class="barra-lateral">
+        
+        <div class="logo-container">
+            <div class="logo-icon"></div>
+            <div class="logo-text">DayToDay</div>
+        </div>
+
+        <div class="titulo-barra">PRINCIPAL</div>
+        <nav class="menu">
+            <a href="principio.html">Inicio</a>
+            <a href="tareas.html">Tareas</a>
+            <a href="habitos.html">Hábitos</a>
+            <a class="active" href="seguimientos.html">Seguimiento</a>
+            <a href="objetivos.html">Objetivos</a>
+        </nav>
+
+        <!-- Organización diaria -->
+        <div class="titulo-barra">ORGANIZACIÓN</div>
+        <nav class="menu">
+            <a href="notas.html">Notas</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="planificador.html">Planificador Diario</a>
+        </nav>
+
+        <!-- Perfil de usuario -->
+        <a href="perfil.html" class="user-profile">
+            <img src="ruth.jpeg" alt="Foto de perfil" class="profile-img cuenta-avatar">
+            <div class="user-info">
+                <h2>Ruth Ruiz Diaz</h2>
+                <p>Ruth2010@gmail.com</p>
+            </div>
+        </a>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <div class="app-container">
+                
+            <div class="banner-encabezado">
+                <h2>Seguimiento de Hábitos</h2>
+                <p>Evaluación analítica del rendimiento, cumplimiento y aspectos a corregir durante el último mes.</p>
+            </div>
+          
+            <div class="dashboard-grid">
+                
+                <!-- LO COMPLETADO EN EL MES -->
+                <div class="card card-ancho">
+                    <p class="card-subtitle">HÁBITOS COMPLETADOS EN EL MES</p>
+                    
+                    <div class="lista-habitos-resumen">
+                        <div class="item-habito-resumen">
+                            <span>💧 Tomar agua (Beber al menos 2L al día)</span>
+                            <span class="badge-estado verde">cumplida</span>
+                        </div>
+                        <div class="item-habito-resumen">
+                            <span>📖 Leer (Leer un libro o capítulo)</span>
+                            <span class="badge-estado verde">cumplida</span>
+                        </div>
+                        <div class="item-habito-resumen">
+                            <span>💻 Organizar mi espacio (Mantener orden)</span>
+                            <span class="badge-estado verde">cumplida</span>
+                        </div>
+                        <div class="item-habito-resumen">
+                            <span>🏋️ Hacer ejercicio (Mover mi cuerpo)</span>
+                            <span class="badge-estado rojo">irregular</span>
+                        </div>
+                        <div class="item-habito-resumen">
+                            <span>🍎 Comer saludable (Comidas nutritivas)</span>
+                            <span class="badge-estado rojo">irregular</span>
+                        </div>
+                        <div class="item-habito-resumen">
+                            <span>🧘 Meditar o relajarme (10 min)</span>
+                            <span class="badge-estado rojo">irregular</span>
+                        </div>
+                        <div class="item-habito-resumen">
+                            <span>🛌 Dormir bien (7-8 hs)</span>
+                            <span class="badge-estado rojo">Irregular</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ASPECTOS POSITIVOS -->
+                <div class="card">
+                    <p class="card-subtitle">ASPECTOS POSITIVOS</p>
+                    <h2>Logros y Constancia</h2>
+                    <ul class="lista-textos" contenteditable="true">
+                        <li>Excelente cumplimiento en la lectura diaria y registro de apuntes técnicos.</li>
+                        <li>Mantenimiento de organizacion en la area educativa.</li>
+                        <li>Buena hidratacion de agua en los tiempos recomendados.</li>
+                    </ul>
+                </div>
+
+                <!-- ASPECTOS NEGATIVOS -->
+                <div class="card">
+                    <p class="card-subtitle">ASPECTOS NEGATIVOS</p>
+                    <h2>Áreas con Dificultades</h2>
+                    <ul class="lista-textos" contenteditable="true">
+                        <li>Poca frecuencia de actividad física.</li>
+                        <li>Horarios de descanso irregulares provocados por exceso de tiempo frente a pantallas a altas horas.</li>
+                        <li>Falta de nutrientes en comidas consumidas cotidianamente.</li>
+                    </ul>
+                </div>
+
+                <!-- ANÁLISIS DE MEJORA Y ACCIONES CORRECTIVAS -->
+                <div class="card card-ancho card-mejora">
+                    <p class="card-subtitle">ANÁLISIS DE MEJORA Y ACCIONES CORRECTIVAS</p>
+                    <h2>¿En qué mejorar y qué hacer?</h2>
+                    
+                    <div class="grid-mejora-detalle">
+                        <div class="bloque-mejora">
+                            <h3>Área afectada: Descanso y Sueño</h3>
+                            <p><strong>Problema:</strong> Horarios de sueño afectados por pantallas.</p>
+                            <p><strong>Solucion:</strong> Establecer una alarma obligatoria de apagado de dispositivos a las 23:00 hs y priorizar 7 horas de descanso continuo.</p>
+                        </div>
+
+                        <div class="bloque-mejora">
+                            <h3>Área afectada: Actividad Física</h3>
+                            <p><strong>Problema:</strong> Abandono de actividad fisica debido a tareas educativas.</p>
+                            <p><strong>Solucion:</strong> Reservar 20 minutos diarios por la tarde exclusivamente para caminatas tranquilas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA DE FONDO AZUL INTERMEDIO CON GIF ANIMADO -->
+                <div class="card card-ancho tarjeta-azul-motivacional">
+                    <div class="contenido-tarjeta-azul">
+                        <div class="texto-motivacional">
+                            <p class="card-subtitle-azul">EL COMPROMISO ES LO PRIMERO</p>
+                            <h2>¿Queres constancia y cumplimiento?</h2>
+                            <p>Day To Day te ayuda a avanzar progresivamente llevando un control y cuenta de lo que haces para ayudarte independientemente de la situacion en la que te encuentres.
+                                 <br>"El éxito sostenido no es un acto aislado, sino el resultado de hábitos estructurados y controlados en el tiempo"<br>
+                                  <strong>Conta con tu Agenda para lo que te propongas</strong>
+                            </p>
+                        </div>
+                        <div class="contenedor-gif-card">
+                            <img src="personita.gif" alt="personita" class="gif-tarjeta">
+                            <span class="etiqueta-gif">Crecimiento continuo</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

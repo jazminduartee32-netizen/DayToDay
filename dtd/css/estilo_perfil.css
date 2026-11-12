@@ -1,0 +1,32 @@
+/* ==========================================
+   PERFIL DE USUARIO EN EL SIDEBAR (ESTÁNDAR)
+   ========================================== */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+.profile-img, .cuenta-avatar {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+}
+
+.user-info h2, .user-info strong {
+  font-size: 14px !important;
+  color: #0f172a !important;
+  font-weight: 600 !important;
+}
+
+.user-info p, .user-info span {
+  font-size: 12px !important;
+  color: #64748b !important;
+}

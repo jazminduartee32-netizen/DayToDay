@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayToDay - Planificador Diario</title>
+    <link rel="stylesheet" href="css\planificador.css">
+    <link rel="stylesheet" href="css\menu.css">
+    <link rel="stylesheet" href="css\estilo_perfil.css">
+</head>
+<body>
+
+    <!-- Menú lateral unificado -->
+    <aside class="barra-lateral">
+        
+        <div class="logo-container">
+            <div class="logo-icon"></div>
+            <div class="logo-text">DayToDay</div>
+        </div>
+
+        <div class="titulo-barra">PRINCIPAL</div>
+        <nav class="menu">
+            <a href="principio.html">Inicio</a>
+            <a href="tareas.html">Tareas</a>
+            <a href="habitos.html">Hábitos</a>
+            <a href="seguimientos.html">Seguimiento</a>
+            <a href="objetivos.html">Objetivos</a>
+        </nav>
+
+        <!-- Organización diaria -->
+        <div class="titulo-barra">ORGANIZACIÓN</div>
+        <nav class="menu">
+            <a href="Notas.html">Notas</a>
+            <a href="calendario.html">Calendario</a>
+            <a class="active" href="planificador.html">Planificador Diario</a>
+        </nav>
+
+        <!-- Perfil de usuario -->
+        <a href="perfil.html" class="user-profile">
+            <img src="ruth.jpeg" alt="Foto de perfil" class="profile-img cuenta-avatar">
+            <div class="user-info cuenta-info">
+                <h2>Ruth Ruiz Diaz</h2>
+                <p>Ruth2010@gmail.com</p>
+            </div>
+        </a>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        
+        <!-- Encabezado y Fecha -->
+        <div class="planner-header">
+            <div class="header-banner">
+                <p class="date-display">ORGANIZACIÓN PERSONAL</p>
+                <h2>Planificador diario</h2>
+            </div>
+            <div class="date-box">
+                <span class="date-label">Fecha:</span>
+                <div class="days-row">
+                    <span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grilla principal del planificador (Dos columnas estilo dashboard) -->
+        <div class="planner-grid">
+            
+            <!-- Columna Izquierda: Mi plan del día por horas y Notas -->
+            <div class="planner-column">
+                
+                <!-- Tarjeta: Plan del día por horas -->
+                <div class="card">
+                    <p class="card-subtitle">MI PLAN DEL DÍA</p>
+                    
+                    <div class="hours-list">
+                        <div class="hour-row"><span>5:00 a.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>6:00 a.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>7:00 a.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>8:00 a.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>9:00 a.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>10:00 a.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>11:00 a.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>12:00 p.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>1:00 p.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>2:00 p.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>3:00 p.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>4:00 p.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>5:00 p.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>6:00 p.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>7:00 p.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>8:00 p.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>9:00 p.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>10:00 p.m.</span><div class="hour-line"></div></div>
+                        <div class="hour-row"><span>11:00 p.m.</span><div class="hour-line"></div></div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta: Notas -->
+                <div class="card notes-card">
+                    <p class="card-subtitle">NOTAS</p>
+                    <div class="notes-box-content">
+                        <p>Escribe aquí notas importantes del día...</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Columna Derecha: Estado de ánimo, Prioridades, Tareas y Para mañana -->
+            <div class="planner-column">
+                
+                <!-- Tarjeta: Estado de ánimo -->
+                <div class="card mood-card">
+                    <p class="card-subtitle">MI ESTADO DE ÁNIMO</p>
+                    <div class="mood-emojis">
+                        <span>😁</span><span>😊</span><span>😐</span><span>🙁</span><span>😭</span>
+                    </div>
+                </div>
+
+                <!-- Tarjeta: Mis prioridades -->
+                <div class="card">
+                    <p class="card-subtitle">MIS PRIORIDADES</p>
+                    <div class="priority-item"><div class="priority-checkbox"></div><div class="hour-line"></div></div>
+                    <div class="priority-item"><div class="priority-checkbox"></div><div class="hour-line"></div></div>
+                    <div class="priority-item"><div class="priority-checkbox"></div><div class="hour-line"></div></div>
+                </div>
+
+                <!-- Tarjeta: Lista de tareas -->
+                <div class="card">
+                    <p class="card-subtitle">LISTA DE TAREAS</p>
+                    <div class="task-row"><input type="checkbox"><div class="hour-line"></div></div>
+                    <div class="task-row"><input type="checkbox"><div class="hour-line"></div></div>
+                    <div class="task-row"><input type="checkbox"><div class="hour-line"></div></div>
+                    <div class="task-row"><input type="checkbox"><div class="hour-line"></div></div>
+                    <div class="task-row"><input type="checkbox"><div class="hour-line"></div></div>
+                </div>
+
+                <!-- Tarjeta: Para mañana -->
+                <div class="card">
+                    <p class="card-subtitle">PARA MAÑANA</p>
+                    <div class="tomorrow-box"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+/* ==========================================
+   ESTILOS GENERALES Y RESET
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ==========================================
+   MENÚ LATERAL (.barra-lateral)
+   ========================================== */
+.barra-lateral {
+  width: 280px;
+  background-color: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #0284c7;
+  border-radius: 8px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.titulo-barra {
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu a:hover, 
+.menu a.active {
+  background-color: #f0f9ff;
+  color: #0284c7;
+}
+
+/* ==========================================
+   PERFIL DE USUARIO EN EL SIDEBAR
+   ========================================== */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info h2 {
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.user-info p {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* ==========================================
+   ÁREA PRINCIPAL Y GRILLA DE CONTENIDO
+   ========================================== */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: #f8fafc;
+}
+
+.header-banner {
+  margin-bottom: 25px;
+}
+
+.date-display {
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.header-banner h2 {
+  font-size: 26px;
+  color: #0f172a;
+}
+
+.dashboard-grid {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.column-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  flex: 1;
+}
+
+.focus-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-subtitle {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.card-image-box {
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(135deg, #e0f2fe 0%, #d1fae5 100%);
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card-btn {
+  background-color: #10b981;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.item-info h2 {
+  font-size: 14px;
+  color: #0f172a;
+  margin-bottom: 2px;
+}
+
+.item-info p {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.badge-today {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.badge-brown {
+  background-color: #ffedd5;
+  color: #c2410c;
+}
+
+.badge-green {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.link-text {
+  font-size: 12px;
+  color: #0284c7;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}

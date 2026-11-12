@@ -1,0 +1,153 @@
+/* ==========================================
+   ESTILOS REGISTRO UNIFICADO - DAYTODAY
+   ========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f9ff; /* Celeste tenue de fondo de la app */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contenedor-centrado {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta-registro {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(14, 165, 233, 0.08);
+  border: 1px solid #bae6fd;
+}
+
+.titulo-logo {
+  color: #0284c7;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.titulo-logo span {
+  color: #0f172a;
+}
+
+.subtitulo {
+  color: #0f172a;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 2px solid #e0f2fe;
+  margin-bottom: 20px;
+}
+
+.grupo-formulario {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.grupo-formulario label {
+  font-size: 11px;
+  font-weight: bold;
+  color: #0284c7;
+  margin-bottom: 4px;
+}
+
+.campo-correo, 
+.campo-contrasena, 
+.campo-nombre {
+  padding: 9px 12px;
+  border-radius: 6px;
+  border: 1px solid #7dd3fc;
+  background-color: #f0f9ff;
+  font-size: 13px;
+  color: #0f172a;
+  outline: none;
+}
+
+.campo-correo:focus, 
+.campo-contrasena:focus, 
+.campo-nombre:focus {
+  background-color: #ffffff;
+  border-color: #0284c7;
+}
+
+.grupo-terminos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #334155;
+  margin: 15px 0 20px 0;
+}
+
+/* El botón transformado en link estilizado */
+.boton-registrarse {
+  display: block;
+  width: 100%;
+  background-color: #0f172a; /* Azul marino de la app */
+  color: #ffffff;
+  padding: 11px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 4px 6px rgba(15, 23, 42, 0.1);
+}
+
+.boton-registrarse:hover {
+  background-color: #0284c7; /* Celeste de acción al pasar el mouse */
+}
+
+.textito {
+  text-align: center;
+  color: #64748b;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.link-inicio {
+  color: #0284c7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-inicio:hover {
+  text-decoration: underline;
+}
+
+.link-terminos {
+  color: #868f94;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-terminos:hover {
+  text-decoration: underline;
+}

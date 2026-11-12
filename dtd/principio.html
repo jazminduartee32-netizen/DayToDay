@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayToDay - Inicio</title>
+    <link rel="stylesheet" href="css\principio.css">
+    <link rel="stylesheet" href="css\menu.css">
+    <link rel="stylesheet" href="css\estilo_perfil.css">
+</head>
+<body>
+
+    <!-- Menú lateral con la nueva estructura -->
+    <aside class="barra-lateral">
+        
+        <div class="logo-container">
+            <div class="logo-icon"></div>
+            <div class="logo-text">DayToDay</div>
+        </div>
+
+        <div class="titulo-barra">Principal</div>
+        <nav class="menu">
+            <a class="active" href="principio.html">Inicio</a>
+            <a href="tareas.html">Tareas</a>
+            <a href="habitos.html">Habitos</a>
+            <a href="seguimientos.html">Seguimiento</a>
+            <a href="objetivos.html">Objetivos</a>
+        </nav>
+
+        <!-- Organización diaria -->
+        <div class="titulo-barra">Organizacion</div>
+        <nav class="menu">
+            <a href="notas.html">Notas</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="planificador.html">Planificador Diario</a>
+        </nav>
+
+        <!-- Perfil de usuario -->
+        <a href="perfil.html" class="user-profile">
+            <img src="ruth.jpeg" alt="Foto de perfil" class="profile-img cuenta-avatar">
+            <div class="user-info cuenta-info">
+                <h2>Ruth Ruiz Diaz</h2>
+                <p>Ruth2010@gmail.com</p>
+            </div>
+        </a>
+    </aside>
+
+    <div class="main-content">
+        
+        <!-- bienvenido -->
+        <div class="header-banner">
+            <p class="date-display">SABADO, 24 DE OCTUBRE</p>
+            <h2>Buenos dias, <strong>Ruth</strong>!</h2>
+        </div>
+
+        <!-- Grilla que organiza las tarjetas -->
+        <div class="dashboard-grid">
+            
+            <!-- Tarjeta : Actividad enfocada del dia -->
+            <div class="card focus-card">
+                <p class="card-subtitle">TU ENFOQUE HOY</p>
+                <h2>Maquetacion HTML y CSS de la app DayToDay</h2>
+                <p class="card-desc">Revisar etiquetas, clases y estilos correspondientes a la estructura de la base de datos.</p>
+                <div class="card-image-box"></div>
+                <button class="card-btn">Completado</button>
+            </div>
+
+            <!-- Columna central: Resumen de Habitos y Objetivos -->
+            <div class="column-stack">
+                
+                <div class="card">
+                    <p class="card-subtitle">SEGUIMIENTO DE HABITOS</p>
+                    
+                    <div class="list-item">
+                        <div class="item-info">
+                            <h2>Estudiar Programacion Web</h2>
+                            <p>30 minutos seguidos</p>
+                        </div>
+                        <span class="badge badge-today">Hoy</span>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="item-info">
+                            <h2>Practicar SQL / MariaDB</h2>
+                            <p>Revisar claves foraneas</p>
+                        </div>
+                        <span class="badge badge-today">Hoy</span>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="habitos.html" class="link-text">Ver mas habitos</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <p class="card-subtitle">PROXIMOS OBJETIVOS</p>
+                    
+                    <div class="list-item">
+                        <div class="item-info">
+                            <h2>Entrega de Proyecto Web</h2>
+                            <p>Crear la base de datos y la interfaz</p>
+                        </div>
+                        <span class="badge badge-brown">80%</span>
+                    </div>
+
+                    <div class="card-desc">Manten el ritmo para completar el objetivo antes de la fecha límite.</div>
+                </div>
+
+            </div>
+
+            <!-- Columna derecha: Planificador por hora y eventos de Calendario -->
+            <div class="column-stack">
+                
+                <div class="card">
+                    <p class="card-subtitle">PLANIFICADOR DIARIO</p>
+
+                    <div class="list-item">
+                        <div class="item-info">
+                            <h2>08:00 - Repaso de Comandos</h2>
+                            <p>Comprobar la sintaxis en minuscula</p>
+                        </div>
+                        <span class="badge badge-green">Listo</span>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="item-info">
+                            <h2>10:30 - Diseño de Maqueta</h2>
+                            <p>Ajustar colores azul, verde y marron</p>
+                        </div>
+                        <span class="badge badge-brown">En curso</span>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="item-info">
+                            <h2>15:00 - Pruebas de BD</h2>
+                            <p>Verificar insercion de datos</p>
+                        </div>
+                        <span class="badge badge-today">Pendiente</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <p class="card-subtitle">CALENDARIO</p>
+                    <h2>Reunion de Avance del Proyecto</h2>
+                    <p>Mañana a las 10:00 AM</p>
+                    <p class="card-desc">Revision de tablas de MariaDB y prototipo en HTML/CSS.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

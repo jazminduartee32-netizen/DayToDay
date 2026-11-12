@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayToDay - Notas</title>
+    <link rel="stylesheet" href="css\notas.css">
+    <link rel="stylesheet" href="css\menu.css">
+    <link rel="stylesheet" href="css\estilo_perfil.css">
+</head>
+<body>
+
+    <!-- Menú lateral unificado -->
+    <aside class="barra-lateral">
+        
+        <div class="logo-container">
+            <div class="logo-icon"></div>
+            <div class="logo-text">DayToDay</div>
+        </div>
+
+        <div class="titulo-barra">PRINCIPAL</div>
+        <nav class="menu">
+            <a href="principio.html">Inicio</a>
+            <a href="tareas.html">Tareas</a>
+            <a href="habitos.html">Hábitos</a>
+            <a href="seguimientos.html">Seguimiento</a>
+            <a href="objetivos.html">Objetivos</a>
+        </nav>
+
+        <!-- Organización diaria -->
+        <div class="titulo-barra">ORGANIZACIÓN</div>
+        <nav class="menu">
+            <a class="active" href="notas.html">Notas</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="planificador.html">Planificador Diario</a>
+        </nav>
+
+        <!-- Perfil de usuario en el pie -->
+        <a href="perfil.html" class="user-profile">
+            <img src="ruth.jpeg" alt="Foto de perfil" class="profile-img cuenta-avatar">
+            <div class="user-info cuenta-info">
+                <h2>Ruth Ruiz Diaz</h2>
+                <p>Ruth2010@gmail.com</p>
+            </div>
+        </a>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        
+        <!-- Encabezado con Botón de Nueva Nota -->
+        <div class="header-notas">
+            <div class="header-banner">
+                <p class="date-display">ORGANIZACIÓN PERSONAL</p>
+                <h2>Mis <strong>Notas</strong></h2>
+            </div>
+
+            <!-- Botón CSS Puro para activar la nueva nota -->
+            <input type="checkbox" id="toggle-nueva-nota" class="input-nueva-nota">
+            <label for="toggle-nueva-nota" class="btn-agregar-nota">+ Nueva nota</label>
+        </div>
+
+        <!-- Grilla de notas -->
+        <div class="notas-grid">
+
+            <!-- NOTA NUEVA EDITABLE (Aparece al tocar el botón "+ Nueva nota") -->
+            <form class="card nota nota-nueva-creada nota-violeta" onsubmit="return false;">
+                <input type="checkbox" id="eliminar-nueva" class="input-toggle-eliminar">
+                <label for="eliminar-nueva" class="btn-eliminar">×</label>
+                
+                <p class="card-subtitle">NUEVA NOTA</p>
+                
+                <!-- Título editable con Enter -->
+                <input type="text" class="input-nota-titulo" placeholder="Título (Apretá Enter al terminar)" required>
+                
+                <!-- Contenido editable con Enter -->
+                <input type="text" class="input-nota-texto" placeholder="Escribí el contenido..." required>
+                
+                <button type="submit" class="btn-submit-oculto"></button>
+            </form>
+
+            <!-- Nota 1: Celeste Distintivo -->
+            <div class="card nota nota-celeste">
+                <input type="checkbox" id="eliminar-1" class="input-toggle-eliminar">
+                <label for="eliminar-1" class="btn-eliminar">×</label>
+                <p class="card-subtitle">NOTAS GENERALES</p>
+                <h2>To-Do Today</h2>
+                <p class="nota-contenido">Revisar la maquetación en HTML y CSS de las nuevas secciones.</p>
+            </div>
+
+            <!-- Nota 2: Rosa Distintivo -->
+            <div class="card nota nota-rosa">
+                <input type="checkbox" id="eliminar-2" class="input-toggle-eliminar">
+                <label for="eliminar-2" class="btn-eliminar">×</label>
+                <p class="card-subtitle">RECORDATORIO</p>
+                <h2>Hábitos de Salud</h2>
+                <p class="nota-contenido">Tomar agua regularmente y hacer una pausa activa entre clases.</p>
+            </div>
+
+            <!-- Nota 3: Amarillo Distintivo -->
+            <div class="card nota nota-amarilla">
+                <input type="checkbox" id="eliminar-3" class="input-toggle-eliminar">
+                <label for="eliminar-3" class="btn-eliminar">×</label>
+                <p class="card-subtitle">ESTUDIO</p>
+                <h2>Exam Topics</h2>
+                <p class="nota-contenido">Revisar sintaxis de SQL, claves foráneas y estructuras relacionales.</p>
+            </div>
+
+            <!-- Nota 4: Verde Distintivo -->
+            <div class="card nota nota-verde">
+                <input type="checkbox" id="eliminar-4" class="input-toggle-eliminar">
+                <label for="eliminar-4" class="btn-eliminar">×</label>
+                <p class="card-subtitle">METAS</p>
+                <h2>Weekly Goals</h2>
+                <p class="nota-contenido">Completar la maquetación visual de todas las pantallas de DayToDay.</p>
+            </div>
+
+            <!-- Nota 5: Violeta Distintivo -->
+            <div class="card nota nota-violeta">
+                <input type="checkbox" id="eliminar-5" class="input-toggle-eliminar">
+                <label for="eliminar-5" class="btn-eliminar">×</label>
+                <p class="card-subtitle">PROYECTO WEB</p>
+                <h2>Base de Datos</h2>
+                <p class="nota-contenido">Verificar normalización 3FN antes de armar los scripts de prueba.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayToDay - Mi Perfil</title>
+    <link rel="stylesheet" href="css\principio.css">
+    <link rel="stylesheet" href="css\menu.css">
+</head>
+<body style="display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f4f7f6; overflow-y: auto; padding: 20px;">
+
+    <!-- Contenedor central de la página de perfil con ancho controlado y adaptable -->
+    <div class="menu-contenedor" style="width: 100%; max-width: 450px; padding: 25px; margin: auto;">
+        
+        <!-- Botón para volver al inicio -->
+        <div class="menu-seccion-titulo" style="margin-bottom: 15px; padding: 0;">
+            <a href="principio.html" style="text-decoration: none; color: #0284c7; font-weight: bold;">← VOLVER AL INICIO</a>
+        </div>
+
+        <div class="menu-seccion-titulo" style="padding-left: 0; padding-right: 0;">CUENTA</div>
+
+        <!-- Tarjeta de información de la cuenta -->
+        <div class="menu-opcion-desplegable" style="width: 100%;">
+            <div class="cuenta-card" style="padding: 10px 0;">
+                <img src="ruth.jpeg" alt="Foto de perfil predeterminada" class="cuenta-avatar profile-img">
+                <div class="cuenta-info">
+                    <strong>Ruth Ruiz Diaz</strong>
+                    <span>Ruth2010@gmail.com</span>
+                </div>
+            </div>
+
+            <!-- Formulario de edición adaptado al ancho -->
+            <div class="tarjeta-desplegable" style="display: block; position: static; box-shadow: none; margin-top: 10px; width: 100%; padding: 0; background: transparent; border: none;">
+                <div class="desplegable-titulo" style="padding-left: 0;">Editar Mi Cuenta</div>
+                
+                <div class="campo-edicion">
+                    <label>Nombre:</label>
+                    <input type="text" value="Ruth">
+                </div>
+
+                <div class="campo-edicion">
+                    <label>Apellido:</label>
+                    <input type="text" value="Ruiz Diaz">
+                </div>
+
+                <div class="campo-edicion">
+                    <label>Correo Elec:</label>
+                    <input type="email" value="Ruth2010@gmail.com">
+                </div>
+
+                <div class="campo-edicion">
+                    <label for="contrasena">Contraseña</label>
+                    <input class="campo-contrasena" id="contrasena" type="password" placeholder="Ingresa tu contraseña" required>
+                </div>
+
+                <button class="btn-guardar-tarjeta">Guardar Cambios</button>
+            </div>
+        </div>
+
+        <div class="divisor"></div>
+        <div class="menu-seccion-titulo" style="padding-left: 0; padding-right: 0;">CONFIGURACIÓN DE NOTIFICACIONES</div>
+        
+        <div class="opcion-switch">
+            <span>Alertas de tareas</span>
+            <input type="checkbox" checked>
+        </div>
+        <div class="opcion-switch">
+            <span>Recordatorio de hábitos</span>
+            <input type="checkbox" checked>
+        </div>
+        <div class="opcion-switch">
+            <span>Avisos de Calendario</span>
+            <input type="checkbox" checked>
+        </div>
+
+        <div class="divisor"></div>
+        
+        <!-- Enlaces finales -->
+        <div class="menu-opcion" style="padding-left: 0;">
+            <span class="icono">💻</span>
+            <a href="acerca_de.html" style="text-decoration: none; color: inherit;">Acerca de DayToDay</a>
+        </div>
+
+        <div class="menu-opcion opcion-salir" style="padding-left: 0;">
+            <span class="icono">🚪</span>
+            <a href="cerrar_sesion.html" style="text-decoration: none; color: inherit;">Cerrar sesión</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

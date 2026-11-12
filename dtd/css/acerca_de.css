@@ -1,0 +1,282 @@
+/* ==========================================
+   ESTILOS ACERCA DE - DAYTODAY
+   Paleta: Azul marino, Azul claro, Celeste y Verde claro
+   ========================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f9ff; /* Celeste tenue de fondo */
+  margin: 0;
+  padding: 0;
+  color: #0f172a; /* Azul marino profundo */
+}
+
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* BARRA SUPERIOR ESTÁNDAR */
+.header-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px 0;
+  border-bottom: 2px solid #bae6fd;
+  margin-bottom: 25px;
+}
+
+.titulo-pantalla {
+  font-size: 18px;
+  color: #0f172a;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* MENÚ HAMBURGUESA EN CSS PURO */
+.input-toggle-hamburguesa {
+  display: none;
+}
+
+.menu-hamburguesa-container {
+  position: relative;
+}
+
+.btn-hamburguesa {
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 6px 12px;
+  background-color: #e0f2fe;
+  border: 1px solid #7dd3fc;
+  border-radius: 8px;
+  color: #0369a1;
+}
+
+.btn-hamburguesa:hover {
+  background-color: #bae6fd;
+}
+
+.panel-navegacion-flotante {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 220px;
+  background-color: #ffffff;
+  border: 1px solid #bae6fd;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(2, 132, 199, 0.15);
+  padding: 12px;
+  z-index: 1000;
+}
+
+.input-toggle-hamburguesa:checked ~ .panel-navegacion-flotante {
+  display: block;
+}
+
+.panel-navegacion-flotante .menu-opcion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  color: #1e293b;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.panel-navegacion-flotante .menu-opcion:hover {
+  background-color: #e0f2fe;
+}
+
+.menu-seccion-titulo {
+  font-size: 11px;
+  font-weight: bold;
+  color: #0284c7;
+  margin: 8px 0 4px 4px;
+  letter-spacing: 0.5px;
+}
+
+.divisor {
+  height: 1px;
+  background-color: #bae6fd;
+  margin: 8px 0;
+}
+
+.opcion-cerrar-menu {
+  color: #dc2626;
+  cursor: pointer;
+}
+
+/* USUARIO SUPERIOR DERECHA */
+.user-profile-header {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.user-profile-header:hover {
+  background-color: #e0f2fe;
+}
+
+.user-info-text strong {
+  font-size: 12px;
+  display: block;
+  color: #0f172a;
+}
+
+.user-info-text span {
+  font-size: 10px;
+  color: #0284c7;
+}
+
+.profile-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #0284c7;
+}
+
+/* CONTENIDO DE LA PÁGINA ACERCA DE */
+.contenido-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tarjeta-info {
+  background: #ffffff;
+  border: 1px solid #bae6fd;
+  border-left: 5px solid #0f172a; /* Azul marino */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.tarjeta-info h2 {
+  margin-top: 0;
+  color: #0f172a;
+  font-size: 18px;
+}
+
+.tarjeta-info p {
+  color: #334155;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* ETIQUETAS DE PALABRAS CLAVE */
+.palabras-clave-box {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag-clave {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #bae6fd;
+}
+
+/* GRILLA DE DETALLES */
+.grid-secciones {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tarjeta-detalle {
+  flex: 1;
+  min-width: 280px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #bae6fd;
+}
+
+/* Toques en verde claro y celeste */
+.tarjeta-verde {
+  background-color: #f0fdf4; /* Verde claro muy sutil */
+  border-color: #bbf7d0;
+}
+
+.tarjeta-celeste {
+  background-color: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+.tarjeta-detalle h3 {
+  margin-top: 0;
+  font-size: 16px;
+  color: #0f172a;
+  border-bottom: 2px solid #0284c7;
+  padding-bottom: 6px;
+}
+
+.tarjeta-detalle ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.tarjeta-detalle li {
+  margin-bottom: 8px;
+}
+
+/* CONTENEDOR DEL GIF EN LA PARTE INFERIOR */
+.contenedor-gif {
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #bae6fd;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.gif-inferior {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.texto-pie-gif {
+  font-size: 12px;
+  color: #0284c7;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* BOTÓN DE RETORNO */
+.contenedor-boton-volver {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.btn-volver {
+  display: inline-block;
+  background-color: #0284c7; /* Azul claro */
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-volver:hover {
+  background-color: #0369a1; /* Azul marino más oscuro */
+}

@@ -1,0 +1,326 @@
+/* ==========================================
+   ESTILOS GENERALES Y RESET
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ==========================================
+   MENÚ LATERAL (.barra-lateral)
+   ========================================== */
+.barra-lateral {
+  width: 280px;
+  background-color: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #0284c7;
+  border-radius: 8px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.titulo-barra {
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu a:hover, 
+.menu a.active {
+  background-color: #f0f9ff;
+  color: #0284c7;
+}
+
+/* Perfil de usuario */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info h2 {
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.user-info p {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* ==========================================
+   CONTENIDO PRINCIPAL Y ENCABEZADO
+   ========================================== */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: #f8fafc;
+}
+
+.header-notas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.date-display {
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.header-banner h2 {
+  font-size: 26px;
+  color: #0f172a;
+}
+
+/* Botón + Nueva Nota (CSS Puro) */
+.input-nueva-nota {
+  display: none;
+}
+
+.btn-agregar-nota {
+  background-color: #0284c7;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  box-shadow: 0 2px 4px rgba(2, 132, 199, 0.2);
+}
+
+.btn-agregar-nota:hover {
+  background-color: #0369a1;
+}
+
+/* ==========================================
+   GRILLA Y TARJETAS CON COLORES DISTINTIVOS
+   ========================================== */
+.notas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card.nota {
+  position: relative;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card.nota:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card-subtitle {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.card.nota h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.nota-contenido {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* ------------------------------------------
+   COLORES INTENSOS Y BIEN DISTINGUIDOS
+   ------------------------------------------ */
+/* CELESTE */
+.nota-celeste {
+  background-color: #e0f2fe;
+  border-left: 6px solid #0284c7;
+}
+.nota-celeste .card-subtitle { color: #0369a1; }
+.nota-celeste h2 { color: #075985; }
+.nota-celeste .nota-contenido { color: #0c4a6e; }
+
+/* ROSA */
+.nota-rosa {
+  background-color: #fce7f3;
+  border-left: 6px solid #ec4899;
+}
+.nota-rosa .card-subtitle { color: #be185d; }
+.nota-rosa h2 { color: #9d174d; }
+.nota-rosa .nota-contenido { color: #831843; }
+
+/* AMARILLO */
+.nota-amarilla {
+  background-color: #fef08a;
+  border-left: 6px solid #eab308;
+}
+.nota-amarilla .card-subtitle { color: #a16207; }
+.nota-amarilla h2 { color: #854d0e; }
+.nota-amarilla .nota-contenido { color: #713f12; }
+
+/* VERDE */
+.nota-verde {
+  background-color: #dcfce7;
+  border-left: 6px solid #10b981;
+}
+.nota-verde .card-subtitle { color: #047857; }
+.nota-verde h2 { color: #065f46; }
+.nota-verde .nota-contenido { color: #064e3b; }
+
+/* VIOLETA */
+.nota-violeta {
+  background-color: #ede9fe;
+  border-left: 6px solid #8b5cf6;
+}
+.nota-violeta .card-subtitle { color: #6d28d9; }
+.nota-violeta h2 { color: #5b21b6; }
+.nota-violeta .nota-contenido { color: #4c1d95; }
+
+/* ------------------------------------------
+   MECANISMO DE ELIMINACIÓN Y NUEVA NOTA (CSS)
+   ------------------------------------------ */
+.input-toggle-eliminar {
+  display: none;
+}
+
+.btn-eliminar {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #64748b;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.btn-eliminar:hover {
+  color: #dc2626;
+}
+
+.card.nota:has(.input-toggle-eliminar:checked) {
+  display: none;
+}
+
+/* Control para mostrar la nota nueva */
+.nota-nueva-creada {
+  display: none;
+}
+
+.input-nueva-nota:checked ~ .notas-grid .nota-nueva-creada {
+  display: flex;
+}
+
+/* Campos de texto editables estilo Nota */
+.input-nota-titulo,
+.input-nota-texto {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px dashed #a78bfa;
+  outline: none;
+  font-family: inherit;
+  margin-bottom: 8px;
+  padding: 4px 0;
+}
+
+.input-nota-titulo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #5b21b6;
+}
+
+.input-nota-texto {
+  font-size: 13px;
+  color: #4c1d95;
+}
+
+/* Al perder el foco o presionar Enter, desaparece la línea de edición y queda fijo */
+.input-nota-titulo:not(:focus),
+.input-nota-texto:not(:focus) {
+  border-bottom: none;
+}
+
+.btn-submit-oculto {
+  display: none;
+}

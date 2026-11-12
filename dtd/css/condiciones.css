@@ -1,0 +1,125 @@
+/* ==========================================
+   ESTILOS TÉRMINOS Y CONDICIONES - DAYTODAY
+   ========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f9ff; /* Celeste tenue característico de la app */
+  color: #0f172a;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-principal {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tarjeta-terminos {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(14, 165, 233, 0.08);
+  border: 1px solid #bae6fd;
+}
+
+.encabezado-terminos {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e0f2fe;
+  padding-bottom: 20px;
+}
+
+.titulo-logo {
+  color: #0284c7;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.titulo-logo span {
+  color: #0f172a;
+}
+
+.encabezado-terminos h1 {
+  font-size: 22px;
+  color: #0f172a;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.fecha-actualizacion {
+  font-size: 12px;
+  color: #64748b;
+  font-style: italic;
+}
+
+.contenido-legal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 450px;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+
+/* Personalización de la barra de desplazamiento interna */
+.contenido-legal::-webkit-scrollbar {
+  width: 6px;
+}
+.contenido-legal::-webkit-scrollbar-thumb {
+  background-color: #bae6fd;
+  border-radius: 4px;
+}
+
+.seccion-texto h2 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0284c7;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.seccion-texto p {
+  font-size: 13px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.pie-terminos {
+  text-align: center;
+  border-top: 2px solid #e0f2fe;
+  padding-top: 20px;
+}
+
+.boton-volver {
+  display: inline-block;
+  background-color: #0f172a; /* Azul marino de la app */
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 4px 6px rgba(15, 23, 42, 0.1);
+}
+
+.boton-volver:hover {
+  background-color: #0284c7; /* Celeste de acción al pasar el mouse */
+}

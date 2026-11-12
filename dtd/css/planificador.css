@@ -1,0 +1,285 @@
+/* ==========================================
+   ESTILOS GENERALES Y RESET
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ==========================================
+   MENÚ LATERAL (.barra-lateral)
+   ========================================== */
+.barra-lateral {
+  width: 280px;
+  background-color: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #0284c7;
+  border-radius: 8px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.titulo-barra {
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu a:hover, 
+.menu a.active {
+  background-color: #f0f9ff;
+  color: #0284c7;
+}
+
+/* Perfil de usuario */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info h2 {
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.user-info p {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* ==========================================
+   CONTENIDOS DEL PLANIFICADOR
+   ========================================== */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: #f8fafc;
+}
+
+.planner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.date-display {
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.header-banner h2 {
+  font-size: 26px;
+  color: #0f172a;
+}
+
+/* Bloque de Fecha superior derecho */
+.date-box {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.date-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #0284c7;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.days-row {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+/* Grilla de dos columnas */
+.planner-grid {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.planner-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+/* Tarjetas base con estética de inicio */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.card-subtitle {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Plan del día (Horas) */
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hour-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hour-row span {
+  font-size: 12px;
+  color: #64748b;
+  width: 65px;
+  font-weight: 500;
+}
+
+.hour-line {
+  flex: 1;
+  height: 1px;
+  background-color: #e2e8f0;
+}
+
+/* Estado de ánimo */
+.mood-emojis {
+  display: flex;
+  justify-content: space-around;
+  font-size: 22px;
+  padding: 5px 0;
+}
+
+/* Prioridades y Tareas */
+.priority-item, .task-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.priority-checkbox {
+  width: 14px;
+  height: 14px;
+  background-color: #0284c7;
+  border-radius: 3px;
+}
+
+.task-row input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Sección de Notas (con el tono azul característico de tu diseño original) */
+.notes-card {
+  background-color: #0284c7;
+}
+
+.notes-card .card-subtitle {
+  color: #ffffff;
+}
+
+.notes-box-content {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 15px;
+  min-height: 100px;
+}
+
+.notes-box-content p {
+  font-size: 13px;
+  color: #ffffff;
+}
+
+/* Para mañana (Caja de texto vacía) */
+.tomorrow-box {
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  height: 90px;
+}

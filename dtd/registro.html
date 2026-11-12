@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayToDay - Registrarse</title>
+    <link rel="stylesheet" href="css\registro.css">
+</head>
+<body>
+
+    <div class="contenedor-centrado">
+        <article class="tarjeta-registro">
+            <header>
+                <p class="titulo-logo">Day<span>To</span>Day</p>
+                <h3 class="subtitulo">Registrarse</h3>
+            </header>
+
+            <div class="grupo-formulario">
+                <label for="nombre">Nombre y Apellido</label>
+                <input class="campo-nombre" id="nombre" type="text" placeholder="Ingresar tu nombre" required>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="correo">Correo electrónico</label>
+                <input class="campo-correo" id="correo" type="email" placeholder="ejemplo111@mail.com" required>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="contrasena">Contraseña</label>
+                <input class="campo-contrasena" id="contrasena" type="password" placeholder="Ingresa tu contraseña" required>
+            </div>
+
+            <div class="grupo-terminos">
+                <input type="checkbox" id="terminos" name="usuario_terminos" value="aceptado" required>
+                <label for="terminos"><a class="link-terminos" href="condiciones.html" target="_blank">Acepto los términos y condiciones</a></label>
+            </div>
+
+            <!-- Botón transformado en enlace que redirige a la pantalla de inicio -->
+            <a href="principio.html" class="boton-registrarse">Registrarse</a>
+
+            <p class="textito">¿Ya te registraste? 
+                <a class="link-inicio" href="inicio_sesion.html">Inicia sesión</a>
+            </p>
+        </article>
+    </div>
+
+</body>
+</html>
